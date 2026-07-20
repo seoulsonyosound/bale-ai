@@ -28,18 +28,16 @@ def show_dataset(assets):
     df_clean = df_clean.replace('na', np.nan)
     
     # Render basic info about the dataset
-    st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
-    st.markdown("<h3 style='margin-top:0; color:#0F172A;'>Dataset Overview</h3>", unsafe_allow_html=True)
-    
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("Total Records", f"{len(df_clean):,}")
-    with col2:
-        st.metric("Features Available", f"{len(df_clean.columns)}")
-    with col3:
-        st.metric("Unique Locations", f"{df_clean['Location'].dropna().nunique():,}")
-        
-    st.markdown("</div>", unsafe_allow_html=True)
+    # Render basic info about the dataset
+    with st.container(border=True):
+        st.markdown("<h3 style='margin-top:0; color:#0F172A; font-size:18px;'>Dataset Overview</h3>", unsafe_allow_html=True)
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Total Records", f"{len(df_clean):,}")
+        with col2:
+            st.metric("Features Available", f"{len(df_clean.columns)}")
+        with col3:
+            st.metric("Unique Locations", f"{df_clean['Location'].dropna().nunique():,}")
 
     # Cleaning price for correlation plot and search filters
     if 'Price (PHP)' in df_clean.columns:

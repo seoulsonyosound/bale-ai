@@ -140,7 +140,7 @@ def plot_price_gauge(pred_price, q33, q66):
         number = {'valueformat': ',.0f', 'suffix': ' PHP', 'font': {'size': 22, 'color': COLORS['dark']}},
         gauge = {
             'axis': {'range': [None, max_val], 'tickwidth': 1, 'tickcolor': COLORS['dark']},
-            'bar': {'color': COLORS['primary'], 'width': 2},
+            'bar': {'color': COLORS['primary']},
             'bgcolor': "white",
             'borderwidth': 2,
             'bordercolor': "#DEE2E6",

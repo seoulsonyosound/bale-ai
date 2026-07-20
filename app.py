@@ -59,7 +59,7 @@ def main():
         return
 
     # Navigation menu
-    st.sidebar.markdown("<p style='font-size:12px; font-weight:600; color:#6C757D; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:5px;'>Navigation</p>", unsafe_allow_html=True)
+    st.sidebar.markdown("<div class='nav-label'>Navigation</div>", unsafe_allow_html=True)
     
     navigation_options = {
         "Dashboard": "dashboard",
