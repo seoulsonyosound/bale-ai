@@ -1,6 +1,6 @@
-# ProphetAI: AI-Powered House Price Prediction & Market Analytics Platform
+# BaleAI: AI-Powered House Price Prediction & Market Analytics Platform
 
-ProphetAI is a professional, responsive, and production-ready Streamlit web application that uses a tuned XGBoost Machine Learning model to calculate high-precision residential property valuations in the Philippines. It features a modern glassmorphic UI layout inspired by Google AI Studio, Airbnb Analytics, and Airbnb design guidelines.
+BaleAI is a professional, responsive, and production-ready Streamlit web application that uses a tuned XGBoost Machine Learning model to calculate high-precision residential property valuations in the Philippines. It features a modern glassmorphic UI layout inspired by Google AI Studio, Airbnb Analytics, and Airbnb design guidelines.
 
 This application is suitable for thesis defenses, capstone presentations, and commercial deployment.
 
